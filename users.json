@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "627de1fe5a7b75302dd7c9d1"
+  },
+  "name": "Hardiksinh Rajput",
+  "email": "hardiksinhrajput98@gmail.com",
+  "password": "123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e0800a221ad4484efc74d"
+  },
+  "name": "Hardiksinh Rajput",
+  "email": "admin@gmail.com",
+  "password": "625",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e090ca221ad4484efc752"
+  },
+  "name": "Hardiksinh Rajput",
+  "email": "ram@gmail.com",
+  "password": "741",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e27a1a221ad4484efc768"
+  },
+  "name": "Hardiksinh Rajput",
+  "email": "approved@gmail.com",
+  "password": "852",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e3374a221ad4484efc76c"
+  },
+  "name": "dfghjk",
+  "email": "as@gmail.com",
+  "password": "856",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e5649a221ad4484efc776"
+  },
+  "name": "hk",
+  "email": "hk@12gmail.com",
+  "password": "123",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e5ff0a221ad4484efc77b"
+  },
+  "name": "ad",
+  "email": "ad@gmail.com",
+  "password": "753",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "627e65d1a221ad4484efc780"
+  },
+  "name": "khushi",
+  "email": "khushi@gmail.com",
+  "password": "123456",
+  "__v": 0
+}]
