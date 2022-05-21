@@ -31,7 +31,7 @@ const Personal_Info = ({ setPersonal_InfoUser }) => {
         console.log(res.userPersonalInfo)
 
         history.push("/your_education_info")
-        setPersonal_InfoUser(res.data.userPersonalInfo)
+        // setPersonal_InfoUser(res.data.userPersonalInfo)
       })
   }
   //   localStorage.setItem("personal_info", user)

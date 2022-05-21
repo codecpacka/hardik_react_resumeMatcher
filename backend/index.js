@@ -21,23 +21,7 @@ mongoose.connect(
 
 // const User = require("/user.model")
 ///writing changes above
-const personalInfo = new mongoose.Schema({
-  tempName: {
-    type: String,
-  },
-  tempMobileNumber: {
-    type: Number,
-  },
-  tempAge: {
-    type: Number,
 
-    min: 18,
-    max: 60,
-  },
-  tempEmail: {
-    type: String,
-  },
-})
 // const Pinfo = new mongoose.model("Pinfo", personalInfo)
 // const ram = new Pinfo({ tempName: "pal" })
 const userSchema = new mongoose.Schema({
@@ -46,6 +30,7 @@ const userSchema = new mongoose.Schema({
   password: String,
   // personalInfo: {},
   personalInfo: {},
+  educationInfo: {},
 })
 //personal info schema
 
@@ -92,6 +77,31 @@ app.post("/register", (req, res) => {
     }
   })
 })
+// personal education post route
+app.post("/your_education_info", async (req, res) => {
+  // console.log(tempName, user_id)
+  const { user_id } = req.body
+  console.log(req.body)
+  // const newPersonalInfo = new personalInfo({
+  //   tempName: tempAge,
+  //   tempMobileNumber: tempMobileNumber,
+  //   tempAge: tempAge,
+  //   tempEmail: tempEmail,
+  // })
+
+  // User.findByIdAndRemove({ _id: user_id }, { name: "codecpacka" })
+  // const count = await User.findByIdAndRemove({ _id: user_id })
+  delete req.body.user_id
+  // console.log(pinfo)
+  console.log(req.body)
+
+  User.updateOne({ _id: user_id }, { $set: { educationInfo: req.body } }).then(
+    (result, err) => {
+      return res.status(200).json({ data: result, message: "Value Updated" })
+    }
+  )
+})
+
 //personal_info post route
 app.post("/personal_info", async (req, res) => {
   const { tempName, tempMobileNumber, tempAge, tempEmail, user_id } = req.body
